@@ -9,10 +9,16 @@
 /* Begin PBXBuildFile section */
 		D64DC1E21BF3314400A8F5E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D64DC1E11BF3314400A8F5E9 /* main.m */; };
 		D64DC1E51BF3314400A8F5E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D64DC1E41BF3314400A8F5E9 /* AppDelegate.m */; };
-		D64DC1E81BF3314400A8F5E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D64DC1E71BF3314400A8F5E9 /* ViewController.m */; };
 		D64DC1EB1BF3314400A8F5E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D64DC1E91BF3314400A8F5E9 /* Main.storyboard */; };
 		D64DC1ED1BF3314400A8F5E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D64DC1EC1BF3314400A8F5E9 /* Assets.xcassets */; };
 		D64DC1F01BF3314400A8F5E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D64DC1EE1BF3314400A8F5E9 /* LaunchScreen.storyboard */; };
+		D64DC1FB1BF3343400A8F5E9 /* ACRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D64DC1FA1BF3343400A8F5E9 /* ACRootViewController.m */; };
+		D64DC1FE1BF4306C00A8F5E9 /* ACAnchorPointViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D64DC1FD1BF4306C00A8F5E9 /* ACAnchorPointViewController.m */; };
+		D64DC2011BF43F4A00A8F5E9 /* ACAnimatablePropertiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D64DC2001BF43F4A00A8F5E9 /* ACAnimatablePropertiesViewController.m */; };
+		D64DC2041BF475A400A8F5E9 /* ACDrawLayerByDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D64DC2031BF475A400A8F5E9 /* ACDrawLayerByDelegateViewController.m */; };
+		D64DC2071BF488CD00A8F5E9 /* ACCustomLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D64DC2061BF488CD00A8F5E9 /* ACCustomLayer.m */; };
+		D64DC20A1BF4899100A8F5E9 /* ACDrawLayerCustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D64DC2091BF4899100A8F5E9 /* ACDrawLayerCustomViewController.m */; };
+		D64DC20D1BF58DD800A8F5E9 /* ACCircleAvatarWithShadowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D64DC20C1BF58DD800A8F5E9 /* ACCircleAvatarWithShadowViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +26,24 @@
 		D64DC1E11BF3314400A8F5E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D64DC1E31BF3314400A8F5E9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D64DC1E41BF3314400A8F5E9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D64DC1E61BF3314400A8F5E9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D64DC1E71BF3314400A8F5E9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D64DC1EA1BF3314400A8F5E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D64DC1EC1BF3314400A8F5E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D64DC1EF1BF3314400A8F5E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D64DC1F11BF3314400A8F5E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D64DC1F91BF3343400A8F5E9 /* ACRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACRootViewController.h; sourceTree = "<group>"; };
+		D64DC1FA1BF3343400A8F5E9 /* ACRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACRootViewController.m; sourceTree = "<group>"; };
+		D64DC1FC1BF4306C00A8F5E9 /* ACAnchorPointViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACAnchorPointViewController.h; sourceTree = "<group>"; };
+		D64DC1FD1BF4306C00A8F5E9 /* ACAnchorPointViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACAnchorPointViewController.m; sourceTree = "<group>"; };
+		D64DC1FF1BF43F4A00A8F5E9 /* ACAnimatablePropertiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACAnimatablePropertiesViewController.h; sourceTree = "<group>"; };
+		D64DC2001BF43F4A00A8F5E9 /* ACAnimatablePropertiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACAnimatablePropertiesViewController.m; sourceTree = "<group>"; };
+		D64DC2021BF475A400A8F5E9 /* ACDrawLayerByDelegateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACDrawLayerByDelegateViewController.h; sourceTree = "<group>"; };
+		D64DC2031BF475A400A8F5E9 /* ACDrawLayerByDelegateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACDrawLayerByDelegateViewController.m; sourceTree = "<group>"; };
+		D64DC2051BF488CD00A8F5E9 /* ACCustomLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACCustomLayer.h; sourceTree = "<group>"; };
+		D64DC2061BF488CD00A8F5E9 /* ACCustomLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACCustomLayer.m; sourceTree = "<group>"; };
+		D64DC2081BF4899100A8F5E9 /* ACDrawLayerCustomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACDrawLayerCustomViewController.h; sourceTree = "<group>"; };
+		D64DC2091BF4899100A8F5E9 /* ACDrawLayerCustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACDrawLayerCustomViewController.m; sourceTree = "<group>"; };
+		D64DC20B1BF58DD800A8F5E9 /* ACCircleAvatarWithShadowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACCircleAvatarWithShadowViewController.h; sourceTree = "<group>"; };
+		D64DC20C1BF58DD800A8F5E9 /* ACCircleAvatarWithShadowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACCircleAvatarWithShadowViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +76,12 @@
 		D64DC1DF1BF3314400A8F5E9 /* AnimationCase */ = {
 			isa = PBXGroup;
 			children = (
+				D64DC1F71BF332CF00A8F5E9 /* CALayerCase */,
+				D64DC1F81BF332CF00A8F5E9 /* CoreAnimationCase */,
 				D64DC1E31BF3314400A8F5E9 /* AppDelegate.h */,
 				D64DC1E41BF3314400A8F5E9 /* AppDelegate.m */,
-				D64DC1E61BF3314400A8F5E9 /* ViewController.h */,
-				D64DC1E71BF3314400A8F5E9 /* ViewController.m */,
+				D64DC1F91BF3343400A8F5E9 /* ACRootViewController.h */,
+				D64DC1FA1BF3343400A8F5E9 /* ACRootViewController.m */,
 				D64DC1E91BF3314400A8F5E9 /* Main.storyboard */,
 				D64DC1EC1BF3314400A8F5E9 /* Assets.xcassets */,
 				D64DC1EE1BF3314400A8F5E9 /* LaunchScreen.storyboard */,
@@ -77,6 +97,32 @@
 				D64DC1E11BF3314400A8F5E9 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D64DC1F71BF332CF00A8F5E9 /* CALayerCase */ = {
+			isa = PBXGroup;
+			children = (
+				D64DC1FC1BF4306C00A8F5E9 /* ACAnchorPointViewController.h */,
+				D64DC1FD1BF4306C00A8F5E9 /* ACAnchorPointViewController.m */,
+				D64DC1FF1BF43F4A00A8F5E9 /* ACAnimatablePropertiesViewController.h */,
+				D64DC2001BF43F4A00A8F5E9 /* ACAnimatablePropertiesViewController.m */,
+				D64DC2021BF475A400A8F5E9 /* ACDrawLayerByDelegateViewController.h */,
+				D64DC2031BF475A400A8F5E9 /* ACDrawLayerByDelegateViewController.m */,
+				D64DC2051BF488CD00A8F5E9 /* ACCustomLayer.h */,
+				D64DC2061BF488CD00A8F5E9 /* ACCustomLayer.m */,
+				D64DC2081BF4899100A8F5E9 /* ACDrawLayerCustomViewController.h */,
+				D64DC2091BF4899100A8F5E9 /* ACDrawLayerCustomViewController.m */,
+				D64DC20B1BF58DD800A8F5E9 /* ACCircleAvatarWithShadowViewController.h */,
+				D64DC20C1BF58DD800A8F5E9 /* ACCircleAvatarWithShadowViewController.m */,
+			);
+			path = CALayerCase;
+			sourceTree = "<group>";
+		};
+		D64DC1F81BF332CF00A8F5E9 /* CoreAnimationCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreAnimationCase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +151,7 @@
 		D64DC1D51BF3314400A8F5E9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = AC;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = Lucifer;
 				TargetAttributes = {
@@ -149,9 +196,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D64DC1E81BF3314400A8F5E9 /* ViewController.m in Sources */,
+				D64DC2071BF488CD00A8F5E9 /* ACCustomLayer.m in Sources */,
+				D64DC1FE1BF4306C00A8F5E9 /* ACAnchorPointViewController.m in Sources */,
 				D64DC1E51BF3314400A8F5E9 /* AppDelegate.m in Sources */,
+				D64DC1FB1BF3343400A8F5E9 /* ACRootViewController.m in Sources */,
 				D64DC1E21BF3314400A8F5E9 /* main.m in Sources */,
+				D64DC2041BF475A400A8F5E9 /* ACDrawLayerByDelegateViewController.m in Sources */,
+				D64DC2011BF43F4A00A8F5E9 /* ACAnimatablePropertiesViewController.m in Sources */,
+				D64DC20D1BF58DD800A8F5E9 /* ACCircleAvatarWithShadowViewController.m in Sources */,
+				D64DC20A1BF4899100A8F5E9 /* ACDrawLayerCustomViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

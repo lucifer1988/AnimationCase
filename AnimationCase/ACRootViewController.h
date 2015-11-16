@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ACRootViewController.h
 //  AnimationCase
 //
 //  Created by liuyi on 15/11/11.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ACRootViewController : UITableViewController
 
 @end
-
