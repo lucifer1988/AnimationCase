@@ -33,7 +33,7 @@
     rotationAnimation.repeatCount = HUGE_VALF;
     rotationAnimation.removedOnCompletion = NO;
     rotationAnimation.fromValue = [NSNumber numberWithFloat:0];
-    rotationAnimation.toValue = [NSNumber numberWithFloat:3.1415926*2];
+    rotationAnimation.toValue = [NSNumber numberWithFloat:M_PI*2];
     [layer addAnimation:rotationAnimation forKey:@"rotationTransform"];
     
     [self.view.layer addSublayer:layer];

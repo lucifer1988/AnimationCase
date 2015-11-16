@@ -38,10 +38,10 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     switch (section) {
         case 0:
-            return 4;
+            return 6;
             break;
         case 1:
-            return 3;
+            return 4;
             break;
         default:
             return 0;

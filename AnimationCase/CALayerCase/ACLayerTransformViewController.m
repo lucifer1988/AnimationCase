@@ -1,14 +1,14 @@
 //
-//  ACCircleAvatarWithShadowViewController.m
+//  ACLayerTransformViewController.m
 //  AnimationCase
 //
-//  Created by liuyi on 15/11/13.
+//  Created by liuyi on 15/11/16.
 //  Copyright © 2015年 Lucifer. All rights reserved.
 //
 
-#import "ACCircleAvatarWithShadowViewController.h"
+#import "ACLayerTransformViewController.h"
 
-@interface ACCircleAvatarWithShadowViewController () {
+@interface ACLayerTransformViewController () {
     CALayer *layer;
 }
 
@@ -16,38 +16,52 @@
 
 static CGFloat width = 150.0;
 
-@implementation ACCircleAvatarWithShadowViewController
+@implementation ACLayerTransformViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    CGPoint center = self.view.center;
     
-    CALayer *shadowLayer = [[CALayer alloc] init];
-    shadowLayer.bounds = CGRectMake(0, 0, width, width);
-    shadowLayer.position = self.view.center;
-    shadowLayer.backgroundColor = [UIColor whiteColor].CGColor;
-    shadowLayer.cornerRadius = width/2;
-    shadowLayer.shadowOffset = CGSizeMake(2, 2);
-    shadowLayer.shadowColor = [UIColor grayColor].CGColor;
-    shadowLayer.shadowOpacity = 1.0;
-    
-    [self.view.layer addSublayer:shadowLayer];
-    
+    //Plan A
     layer = [[CALayer alloc] init];
     layer.bounds = CGRectMake(0, 0, width, width);
-    layer.position = self.view.center;
+    center.y = center.y-width;
+    layer.position = center;
     layer.backgroundColor = [UIColor blueColor].CGColor;
     layer.cornerRadius = width/2;
     layer.masksToBounds = YES;
     
     layer.borderWidth = 2.0;
     layer.borderColor = [UIColor grayColor].CGColor;
+    [layer setValue:@M_PI forKeyPath:@"transform.rotation.x"];
+//    layer.transform = CATransform3DMakeRotation(M_PI, 1, 0, 0);
+    
     
     layer.delegate = self;
     
     [self.view.layer addSublayer:layer];
     
     [layer setNeedsDisplay];
+    
+    
+    //Plan B
+    CALayer *anotherlayer = [[CALayer alloc] init];
+    anotherlayer.bounds = CGRectMake(0, 0, width, width);
+    center = self.view.center;
+    center.y += width;
+    anotherlayer.position = center;
+    anotherlayer.backgroundColor = [UIColor blueColor].CGColor;
+    anotherlayer.cornerRadius = width/2;
+    anotherlayer.masksToBounds = YES;
+    anotherlayer.borderColor = [UIColor grayColor].CGColor;
+    anotherlayer.borderWidth = 2.0;
+    //设置内容（注意这里一定要转换为CGImage）
+    UIImage *image=[UIImage imageNamed:@"avatar.png"];
+    [anotherlayer setContents:(id)image.CGImage];
+    
+    //添加图层到根图层
+    [self.view.layer addSublayer:anotherlayer];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -73,16 +87,15 @@ static CGFloat width = 150.0;
 #pragma mark - layer delegate
 
 - (void)drawLayer:(CALayer *)layer inContext:(CGContextRef)ctx {
-    CGContextSaveGState(ctx);
-    
-    CGContextScaleCTM(ctx, 1, -1);
-    CGContextTranslateCTM(ctx, 0, -width);
+//    CGContextSaveGState(ctx);
+//    
+//    CGContextScaleCTM(ctx, 1, -1);
+//    CGContextTranslateCTM(ctx, 0, -width);
     
     UIImage *image = [UIImage imageNamed:@"avatar.png"];
     CGContextDrawImage(ctx, CGRectMake(0, 0, width, width), image.CGImage);
     
-    CGContextRestoreGState(ctx);
+//    CGContextRestoreGState(ctx);
 }
-
 
 @end
