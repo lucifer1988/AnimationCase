@@ -27,6 +27,21 @@
 		D64DC21D1BF9ADD800A8F5E9 /* ACMoveAnimationFullEditionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D64DC21C1BF9ADD800A8F5E9 /* ACMoveAnimationFullEditionViewController.m */; };
 		D64DC2201BF9B8A600A8F5E9 /* ACRotationAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D64DC21F1BF9B8A600A8F5E9 /* ACRotationAnimationViewController.m */; };
 		D64DC2261BF9D58B00A8F5E9 /* ACKeyFrameAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D64DC2251BF9D58B00A8F5E9 /* ACKeyFrameAnimationViewController.m */; };
+		D64DC2291BFAC30A00A8F5E9 /* ACKeyFrameAnimationByPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D64DC2281BFAC30A00A8F5E9 /* ACKeyFrameAnimationByPathViewController.m */; };
+		D64DC22C1BFAD6DD00A8F5E9 /* ACGroupAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D64DC22B1BFAD6DD00A8F5E9 /* ACGroupAnimationViewController.m */; };
+		D64DC22F1BFB0BC700A8F5E9 /* ACTransitionAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D64DC22E1BFB0BC700A8F5E9 /* ACTransitionAnimationViewController.m */; };
+		D64DC23B1BFB1A7B00A8F5E9 /* background1.png in Resources */ = {isa = PBXBuildFile; fileRef = D64DC2301BFB1A7B00A8F5E9 /* background1.png */; };
+		D64DC23C1BFB1A7B00A8F5E9 /* fish0.png in Resources */ = {isa = PBXBuildFile; fileRef = D64DC2311BFB1A7B00A8F5E9 /* fish0.png */; };
+		D64DC23D1BFB1A7B00A8F5E9 /* fish1.png in Resources */ = {isa = PBXBuildFile; fileRef = D64DC2321BFB1A7B00A8F5E9 /* fish1.png */; };
+		D64DC23E1BFB1A7B00A8F5E9 /* fish2.png in Resources */ = {isa = PBXBuildFile; fileRef = D64DC2331BFB1A7B00A8F5E9 /* fish2.png */; };
+		D64DC23F1BFB1A7B00A8F5E9 /* fish3.png in Resources */ = {isa = PBXBuildFile; fileRef = D64DC2341BFB1A7B00A8F5E9 /* fish3.png */; };
+		D64DC2401BFB1A7B00A8F5E9 /* fish4.png in Resources */ = {isa = PBXBuildFile; fileRef = D64DC2351BFB1A7B00A8F5E9 /* fish4.png */; };
+		D64DC2411BFB1A7B00A8F5E9 /* fish5.png in Resources */ = {isa = PBXBuildFile; fileRef = D64DC2361BFB1A7B00A8F5E9 /* fish5.png */; };
+		D64DC2421BFB1A7B00A8F5E9 /* fish6.png in Resources */ = {isa = PBXBuildFile; fileRef = D64DC2371BFB1A7B00A8F5E9 /* fish6.png */; };
+		D64DC2431BFB1A7B00A8F5E9 /* fish7.png in Resources */ = {isa = PBXBuildFile; fileRef = D64DC2381BFB1A7B00A8F5E9 /* fish7.png */; };
+		D64DC2441BFB1A7B00A8F5E9 /* fish8.png in Resources */ = {isa = PBXBuildFile; fileRef = D64DC2391BFB1A7B00A8F5E9 /* fish8.png */; };
+		D64DC2451BFB1A7B00A8F5E9 /* fish9.png in Resources */ = {isa = PBXBuildFile; fileRef = D64DC23A1BFB1A7B00A8F5E9 /* fish9.png */; };
+		D64DC2481BFB1B7400A8F5E9 /* ACFrameByFrameAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D64DC2471BFB1B7400A8F5E9 /* ACFrameByFrameAnimationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +80,25 @@
 		D64DC21F1BF9B8A600A8F5E9 /* ACRotationAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACRotationAnimationViewController.m; sourceTree = "<group>"; };
 		D64DC2241BF9D58B00A8F5E9 /* ACKeyFrameAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACKeyFrameAnimationViewController.h; sourceTree = "<group>"; };
 		D64DC2251BF9D58B00A8F5E9 /* ACKeyFrameAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACKeyFrameAnimationViewController.m; sourceTree = "<group>"; };
+		D64DC2271BFAC30A00A8F5E9 /* ACKeyFrameAnimationByPathViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACKeyFrameAnimationByPathViewController.h; sourceTree = "<group>"; };
+		D64DC2281BFAC30A00A8F5E9 /* ACKeyFrameAnimationByPathViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACKeyFrameAnimationByPathViewController.m; sourceTree = "<group>"; };
+		D64DC22A1BFAD6DD00A8F5E9 /* ACGroupAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACGroupAnimationViewController.h; sourceTree = "<group>"; };
+		D64DC22B1BFAD6DD00A8F5E9 /* ACGroupAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACGroupAnimationViewController.m; sourceTree = "<group>"; };
+		D64DC22D1BFB0BC700A8F5E9 /* ACTransitionAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTransitionAnimationViewController.h; sourceTree = "<group>"; };
+		D64DC22E1BFB0BC700A8F5E9 /* ACTransitionAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACTransitionAnimationViewController.m; sourceTree = "<group>"; };
+		D64DC2301BFB1A7B00A8F5E9 /* background1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background1.png; sourceTree = "<group>"; };
+		D64DC2311BFB1A7B00A8F5E9 /* fish0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fish0.png; sourceTree = "<group>"; };
+		D64DC2321BFB1A7B00A8F5E9 /* fish1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fish1.png; sourceTree = "<group>"; };
+		D64DC2331BFB1A7B00A8F5E9 /* fish2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fish2.png; sourceTree = "<group>"; };
+		D64DC2341BFB1A7B00A8F5E9 /* fish3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fish3.png; sourceTree = "<group>"; };
+		D64DC2351BFB1A7B00A8F5E9 /* fish4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fish4.png; sourceTree = "<group>"; };
+		D64DC2361BFB1A7B00A8F5E9 /* fish5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fish5.png; sourceTree = "<group>"; };
+		D64DC2371BFB1A7B00A8F5E9 /* fish6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fish6.png; sourceTree = "<group>"; };
+		D64DC2381BFB1A7B00A8F5E9 /* fish7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fish7.png; sourceTree = "<group>"; };
+		D64DC2391BFB1A7B00A8F5E9 /* fish8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fish8.png; sourceTree = "<group>"; };
+		D64DC23A1BFB1A7B00A8F5E9 /* fish9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fish9.png; sourceTree = "<group>"; };
+		D64DC2461BFB1B7400A8F5E9 /* ACFrameByFrameAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACFrameByFrameAnimationViewController.h; sourceTree = "<group>"; };
+		D64DC2471BFB1B7400A8F5E9 /* ACFrameByFrameAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACFrameByFrameAnimationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +187,14 @@
 				D64DC21F1BF9B8A600A8F5E9 /* ACRotationAnimationViewController.m */,
 				D64DC2241BF9D58B00A8F5E9 /* ACKeyFrameAnimationViewController.h */,
 				D64DC2251BF9D58B00A8F5E9 /* ACKeyFrameAnimationViewController.m */,
+				D64DC2271BFAC30A00A8F5E9 /* ACKeyFrameAnimationByPathViewController.h */,
+				D64DC2281BFAC30A00A8F5E9 /* ACKeyFrameAnimationByPathViewController.m */,
+				D64DC22A1BFAD6DD00A8F5E9 /* ACGroupAnimationViewController.h */,
+				D64DC22B1BFAD6DD00A8F5E9 /* ACGroupAnimationViewController.m */,
+				D64DC22D1BFB0BC700A8F5E9 /* ACTransitionAnimationViewController.h */,
+				D64DC22E1BFB0BC700A8F5E9 /* ACTransitionAnimationViewController.m */,
+				D64DC2461BFB1B7400A8F5E9 /* ACFrameByFrameAnimationViewController.h */,
+				D64DC2471BFB1B7400A8F5E9 /* ACFrameByFrameAnimationViewController.m */,
 			);
 			path = CoreAnimationCase;
 			sourceTree = "<group>";
@@ -160,6 +202,17 @@
 		D64DC2111BF9831700A8F5E9 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				D64DC2301BFB1A7B00A8F5E9 /* background1.png */,
+				D64DC2311BFB1A7B00A8F5E9 /* fish0.png */,
+				D64DC2321BFB1A7B00A8F5E9 /* fish1.png */,
+				D64DC2331BFB1A7B00A8F5E9 /* fish2.png */,
+				D64DC2341BFB1A7B00A8F5E9 /* fish3.png */,
+				D64DC2351BFB1A7B00A8F5E9 /* fish4.png */,
+				D64DC2361BFB1A7B00A8F5E9 /* fish5.png */,
+				D64DC2371BFB1A7B00A8F5E9 /* fish6.png */,
+				D64DC2381BFB1A7B00A8F5E9 /* fish7.png */,
+				D64DC2391BFB1A7B00A8F5E9 /* fish8.png */,
+				D64DC23A1BFB1A7B00A8F5E9 /* fish9.png */,
 				D64DC2121BF9831700A8F5E9 /* avatar.png */,
 				D64DC2131BF9831700A8F5E9 /* background.jpg */,
 				D64DC2141BF9831700A8F5E9 /* petal.png */,
@@ -225,11 +278,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D64DC2421BFB1A7B00A8F5E9 /* fish6.png in Resources */,
 				D64DC2151BF9831700A8F5E9 /* avatar.png in Resources */,
 				D64DC2161BF9831700A8F5E9 /* background.jpg in Resources */,
 				D64DC2171BF9831700A8F5E9 /* petal.png in Resources */,
+				D64DC2411BFB1A7B00A8F5E9 /* fish5.png in Resources */,
+				D64DC23D1BFB1A7B00A8F5E9 /* fish1.png in Resources */,
+				D64DC2431BFB1A7B00A8F5E9 /* fish7.png in Resources */,
 				D64DC1F01BF3314400A8F5E9 /* LaunchScreen.storyboard in Resources */,
 				D64DC1ED1BF3314400A8F5E9 /* Assets.xcassets in Resources */,
+				D64DC2401BFB1A7B00A8F5E9 /* fish4.png in Resources */,
+				D64DC23E1BFB1A7B00A8F5E9 /* fish2.png in Resources */,
+				D64DC23B1BFB1A7B00A8F5E9 /* background1.png in Resources */,
+				D64DC23C1BFB1A7B00A8F5E9 /* fish0.png in Resources */,
+				D64DC23F1BFB1A7B00A8F5E9 /* fish3.png in Resources */,
+				D64DC2441BFB1A7B00A8F5E9 /* fish8.png in Resources */,
+				D64DC2451BFB1A7B00A8F5E9 /* fish9.png in Resources */,
 				D64DC1EB1BF3314400A8F5E9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,13 +309,17 @@
 				D64DC21A1BF9A5BE00A8F5E9 /* ACMoveAnimationViewController.m in Sources */,
 				D64DC21D1BF9ADD800A8F5E9 /* ACMoveAnimationFullEditionViewController.m in Sources */,
 				D64DC1FE1BF4306C00A8F5E9 /* ACAnchorPointViewController.m in Sources */,
+				D64DC22F1BFB0BC700A8F5E9 /* ACTransitionAnimationViewController.m in Sources */,
 				D64DC1E51BF3314400A8F5E9 /* AppDelegate.m in Sources */,
 				D64DC1FB1BF3343400A8F5E9 /* ACRootViewController.m in Sources */,
+				D64DC22C1BFAD6DD00A8F5E9 /* ACGroupAnimationViewController.m in Sources */,
 				D64DC1E21BF3314400A8F5E9 /* main.m in Sources */,
 				D64DC2201BF9B8A600A8F5E9 /* ACRotationAnimationViewController.m in Sources */,
+				D64DC2291BFAC30A00A8F5E9 /* ACKeyFrameAnimationByPathViewController.m in Sources */,
 				D64DC2261BF9D58B00A8F5E9 /* ACKeyFrameAnimationViewController.m in Sources */,
 				D64DC2041BF475A400A8F5E9 /* ACDrawLayerByDelegateViewController.m in Sources */,
 				D64DC2011BF43F4A00A8F5E9 /* ACAnimatablePropertiesViewController.m in Sources */,
+				D64DC2481BFB1B7400A8F5E9 /* ACFrameByFrameAnimationViewController.m in Sources */,
 				D64DC20D1BF58DD800A8F5E9 /* ACCircleAvatarWithShadowViewController.m in Sources */,
 				D64DC2101BF96C9600A8F5E9 /* ACLayerTransformViewController.m in Sources */,
 				D64DC20A1BF4899100A8F5E9 /* ACDrawLayerCustomViewController.m in Sources */,

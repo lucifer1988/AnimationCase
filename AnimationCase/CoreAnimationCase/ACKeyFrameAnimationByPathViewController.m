@@ -1,20 +1,20 @@
 //
-//  ACKeyFrameAnimationViewController.m
+//  ACKeyFrameAnimationByPathViewController.m
 //  AnimationCase
 //
-//  Created by liuyi on 15/11/16.
+//  Created by liuyi on 15/11/17.
 //  Copyright © 2015年 Lucifer. All rights reserved.
 //
 
-#import "ACKeyFrameAnimationViewController.h"
+#import "ACKeyFrameAnimationByPathViewController.h"
 
-@interface ACKeyFrameAnimationViewController () {
+@interface ACKeyFrameAnimationByPathViewController () {
     CALayer *petalLayer;
 }
 
 @end
 
-@implementation ACKeyFrameAnimationViewController
+@implementation ACKeyFrameAnimationByPathViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,7 +24,7 @@
     
     petalLayer = [[CALayer alloc] init];
     petalLayer.bounds = CGRectMake(0, 0, 10, 20);
-    petalLayer.position = CGPointMake(50, 150);
+    petalLayer.position = CGPointMake(100, 150);
     petalLayer.contents = (id)[UIImage imageNamed:@"petal.png"].CGImage;
     
     [self.view.layer addSublayer:petalLayer];
@@ -38,32 +38,33 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 #pragma mark - animation
 
 - (void)addKeyframeMoveAnimation {
     CAKeyframeAnimation *keyframeAnimation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
-    //关键帧动画的初始值不能省略
-    NSValue *key1 = [NSValue valueWithCGPoint:petalLayer.position];
-    NSValue *key2 = [NSValue valueWithCGPoint:CGPointMake(80, 320)];
-    NSValue *key3 = [NSValue valueWithCGPoint:CGPointMake(45, 400)];
-    NSValue *key4 = [NSValue valueWithCGPoint:CGPointMake(55, 500)];
-    NSArray *values = @[key1, key2, key3, key4];
     
-    keyframeAnimation.values = values;
-    [keyframeAnimation setKeyTimes:@[@0.0, @0.5, @0.75, @1.0]];
+    CGMutablePathRef path = CGPathCreateMutable();
+    CGPathMoveToPoint(path, NULL, petalLayer.position.x, petalLayer.position.y);
+    CGPathAddCurveToPoint(path, NULL, 300, 250, -100, 450, 100, 550);
+//    CGPathAddCurveToPoint(path, NULL, 150, 150, 250, 350, 250, 550);
+    
+    
+    keyframeAnimation.path = path;
+    CGPathRelease(path);
     keyframeAnimation.duration = 8.0;
     keyframeAnimation.beginTime = CACurrentMediaTime()+2;
     keyframeAnimation.delegate = self;
-    [keyframeAnimation setValue:key4 forKey:@"petalLayer_keyframeAnimation_destination"];
+    [keyframeAnimation setValue:[NSValue valueWithCGPoint:CGPointMake(100, 550)] forKey:@"petalLayer_keyframeAnimation_destination"];
+//    [keyframeAnimation setValue:[NSValue valueWithCGPoint:CGPointMake(250, 550)] forKey:@"petalLayer_keyframeAnimation_destination"];
     
     [petalLayer addAnimation:keyframeAnimation forKey:@"petalLayer_keyframeAnimation_position"];
 }
