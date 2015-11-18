@@ -1,14 +1,14 @@
 //
-//  ACTransitionAnimationViewController.m
+//  ACViewTransitionAnimationViewController.m
 //  AnimationCase
 //
-//  Created by liuyi on 15/11/17.
+//  Created by liuyi on 15/11/18.
 //  Copyright © 2015年 Lucifer. All rights reserved.
 //
 
-#import "ACTransitionAnimationViewController.h"
+#import "ACViewTransitionAnimationViewController.h"
 
-@interface ACTransitionAnimationViewController () {
+@interface ACViewTransitionAnimationViewController () {
     UIImageView *imageView;
     NSArray *transitionTypes;
 }
@@ -17,12 +17,12 @@
 
 static int transitionTypeIndex;
 
-@implementation ACTransitionAnimationViewController
+@implementation ACViewTransitionAnimationViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    transitionTypes = @[@"fade", @"moveIn", @"push", @"reveal", @"cube", @"oglFlip", @"suckEffect", @"rippleEffect", @"pageCurl", @"pageUnCurl", @"cameraIrisHollowOpen", @"cameraIrisHollowClose"];
+    transitionTypes = @[[NSNumber numberWithUnsignedInteger:UIViewAnimationOptionTransitionFlipFromRight], [NSNumber numberWithUnsignedInteger:UIViewAnimationOptionTransitionCurlUp], [NSNumber numberWithUnsignedInteger:UIViewAnimationOptionTransitionCrossDissolve], [NSNumber numberWithUnsignedInteger:UIViewAnimationOptionTransitionFlipFromBottom]];
     transitionTypeIndex = 0;
     
     imageView = [[UIImageView alloc] initWithFrame:[UIScreen mainScreen].bounds];
@@ -50,15 +50,16 @@ static int transitionTypeIndex;
 */
 
 - (void)swipe:(UISwipeGestureRecognizer *)gestureRecognizer {
-    if (transitionTypeIndex > 11) {
+    if (transitionTypeIndex > 3) {
         transitionTypeIndex = 0;
     }
-    CATransition *transition = [[CATransition alloc] init];
-    transition.type = transitionTypes[transitionTypeIndex];
-    transition.subtype = kCATransitionFromRight;
-    transition.duration = 1.0;
-    [imageView setImage:[UIImage imageNamed:@"background.jpg"]];
-    [imageView.layer addAnimation:transition forKey:@"imageView_transition"];
+    
+    UIViewAnimationOptions option;
+    option = [transitionTypes[transitionTypeIndex] unsignedIntegerValue];
+    option = option|UIViewAnimationOptionCurveLinear;
+    [UIView transitionWithView:imageView duration:1.0 options:option animations:^{
+        [imageView setImage:[UIImage imageNamed:@"background.jpg"]];
+    } completion:nil];
     
     transitionTypeIndex++;
 }

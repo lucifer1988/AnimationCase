@@ -42,6 +42,11 @@
 		D64DC2441BFB1A7B00A8F5E9 /* fish8.png in Resources */ = {isa = PBXBuildFile; fileRef = D64DC2391BFB1A7B00A8F5E9 /* fish8.png */; };
 		D64DC2451BFB1A7B00A8F5E9 /* fish9.png in Resources */ = {isa = PBXBuildFile; fileRef = D64DC23A1BFB1A7B00A8F5E9 /* fish9.png */; };
 		D64DC2481BFB1B7400A8F5E9 /* ACFrameByFrameAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D64DC2471BFB1B7400A8F5E9 /* ACFrameByFrameAnimationViewController.m */; };
+		D64DC24C1BFB2A0300A8F5E9 /* ACViewMoveAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D64DC24B1BFB2A0300A8F5E9 /* ACViewMoveAnimationViewController.m */; };
+		D64DC24F1BFC54E200A8F5E9 /* ACViewSpringAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D64DC24E1BFC54E200A8F5E9 /* ACViewSpringAnimationViewController.m */; };
+		D64DC2511BFC563700A8F5E9 /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = D64DC2501BFC563700A8F5E9 /* ball.png */; };
+		D64DC2541BFC5BA500A8F5E9 /* ACViewKeyframeAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D64DC2531BFC5BA500A8F5E9 /* ACViewKeyframeAnimationViewController.m */; };
+		D64DC2571BFC713700A8F5E9 /* ACViewTransitionAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D64DC2561BFC713700A8F5E9 /* ACViewTransitionAnimationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +104,15 @@
 		D64DC23A1BFB1A7B00A8F5E9 /* fish9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fish9.png; sourceTree = "<group>"; };
 		D64DC2461BFB1B7400A8F5E9 /* ACFrameByFrameAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACFrameByFrameAnimationViewController.h; sourceTree = "<group>"; };
 		D64DC2471BFB1B7400A8F5E9 /* ACFrameByFrameAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACFrameByFrameAnimationViewController.m; sourceTree = "<group>"; };
+		D64DC24A1BFB2A0300A8F5E9 /* ACViewMoveAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACViewMoveAnimationViewController.h; sourceTree = "<group>"; };
+		D64DC24B1BFB2A0300A8F5E9 /* ACViewMoveAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACViewMoveAnimationViewController.m; sourceTree = "<group>"; };
+		D64DC24D1BFC54E200A8F5E9 /* ACViewSpringAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACViewSpringAnimationViewController.h; sourceTree = "<group>"; };
+		D64DC24E1BFC54E200A8F5E9 /* ACViewSpringAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACViewSpringAnimationViewController.m; sourceTree = "<group>"; };
+		D64DC2501BFC563700A8F5E9 /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
+		D64DC2521BFC5BA500A8F5E9 /* ACViewKeyframeAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACViewKeyframeAnimationViewController.h; sourceTree = "<group>"; };
+		D64DC2531BFC5BA500A8F5E9 /* ACViewKeyframeAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACViewKeyframeAnimationViewController.m; sourceTree = "<group>"; };
+		D64DC2551BFC713700A8F5E9 /* ACViewTransitionAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACViewTransitionAnimationViewController.h; sourceTree = "<group>"; };
+		D64DC2561BFC713700A8F5E9 /* ACViewTransitionAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACViewTransitionAnimationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +147,7 @@
 			children = (
 				D64DC1F71BF332CF00A8F5E9 /* CALayerCase */,
 				D64DC1F81BF332CF00A8F5E9 /* CoreAnimationCase */,
+				D64DC2491BFB29B100A8F5E9 /* UIViewCase */,
 				D64DC1E31BF3314400A8F5E9 /* AppDelegate.h */,
 				D64DC1E41BF3314400A8F5E9 /* AppDelegate.m */,
 				D64DC1F91BF3343400A8F5E9 /* ACRootViewController.h */,
@@ -202,6 +217,7 @@
 		D64DC2111BF9831700A8F5E9 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				D64DC2501BFC563700A8F5E9 /* ball.png */,
 				D64DC2301BFB1A7B00A8F5E9 /* background1.png */,
 				D64DC2311BFB1A7B00A8F5E9 /* fish0.png */,
 				D64DC2321BFB1A7B00A8F5E9 /* fish1.png */,
@@ -218,6 +234,21 @@
 				D64DC2141BF9831700A8F5E9 /* petal.png */,
 			);
 			path = image;
+			sourceTree = "<group>";
+		};
+		D64DC2491BFB29B100A8F5E9 /* UIViewCase */ = {
+			isa = PBXGroup;
+			children = (
+				D64DC24A1BFB2A0300A8F5E9 /* ACViewMoveAnimationViewController.h */,
+				D64DC24B1BFB2A0300A8F5E9 /* ACViewMoveAnimationViewController.m */,
+				D64DC24D1BFC54E200A8F5E9 /* ACViewSpringAnimationViewController.h */,
+				D64DC24E1BFC54E200A8F5E9 /* ACViewSpringAnimationViewController.m */,
+				D64DC2521BFC5BA500A8F5E9 /* ACViewKeyframeAnimationViewController.h */,
+				D64DC2531BFC5BA500A8F5E9 /* ACViewKeyframeAnimationViewController.m */,
+				D64DC2551BFC713700A8F5E9 /* ACViewTransitionAnimationViewController.h */,
+				D64DC2561BFC713700A8F5E9 /* ACViewTransitionAnimationViewController.m */,
+			);
+			path = UIViewCase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +311,7 @@
 			files = (
 				D64DC2421BFB1A7B00A8F5E9 /* fish6.png in Resources */,
 				D64DC2151BF9831700A8F5E9 /* avatar.png in Resources */,
+				D64DC2511BFC563700A8F5E9 /* ball.png in Resources */,
 				D64DC2161BF9831700A8F5E9 /* background.jpg in Resources */,
 				D64DC2171BF9831700A8F5E9 /* petal.png in Resources */,
 				D64DC2411BFB1A7B00A8F5E9 /* fish5.png in Resources */,
@@ -306,13 +338,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				D64DC2071BF488CD00A8F5E9 /* ACCustomLayer.m in Sources */,
+				D64DC2571BFC713700A8F5E9 /* ACViewTransitionAnimationViewController.m in Sources */,
+				D64DC24C1BFB2A0300A8F5E9 /* ACViewMoveAnimationViewController.m in Sources */,
 				D64DC21A1BF9A5BE00A8F5E9 /* ACMoveAnimationViewController.m in Sources */,
 				D64DC21D1BF9ADD800A8F5E9 /* ACMoveAnimationFullEditionViewController.m in Sources */,
+				D64DC2541BFC5BA500A8F5E9 /* ACViewKeyframeAnimationViewController.m in Sources */,
 				D64DC1FE1BF4306C00A8F5E9 /* ACAnchorPointViewController.m in Sources */,
 				D64DC22F1BFB0BC700A8F5E9 /* ACTransitionAnimationViewController.m in Sources */,
 				D64DC1E51BF3314400A8F5E9 /* AppDelegate.m in Sources */,
 				D64DC1FB1BF3343400A8F5E9 /* ACRootViewController.m in Sources */,
 				D64DC22C1BFAD6DD00A8F5E9 /* ACGroupAnimationViewController.m in Sources */,
+				D64DC24F1BFC54E200A8F5E9 /* ACViewSpringAnimationViewController.m in Sources */,
 				D64DC1E21BF3314400A8F5E9 /* main.m in Sources */,
 				D64DC2201BF9B8A600A8F5E9 /* ACRotationAnimationViewController.m in Sources */,
 				D64DC2291BFAC30A00A8F5E9 /* ACKeyFrameAnimationByPathViewController.m in Sources */,

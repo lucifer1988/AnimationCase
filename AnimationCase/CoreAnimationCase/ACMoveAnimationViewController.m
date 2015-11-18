@@ -49,11 +49,6 @@
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     UITouch *touch = touches.anyObject;
     [self animationMoveTo:[touch locationInView:self.view]];
-//    NSTimeInterval during = [self petalMoveDuring:[touch locationInView:self.view]];
-//    NSLog(@"during:%f", during);
-//    [UIView animateWithDuration:during animations:^{
-//        petalLayer.position = [touch locationInView:self.view];
-//    }];
 }
 
 #pragma mark - Animation
